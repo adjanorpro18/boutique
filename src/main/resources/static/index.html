@@ -19,7 +19,7 @@
 
     <hr />
 
-    <div class="jumbotron">
+    <div class="jumbotron row">
         <h4 class="card-title">HTML version</h4>
         <br />
         <p>
@@ -31,10 +31,15 @@
     </div>
 
     <hr />
-    <p>
-        <a href="ajax.html" class="btn btn-large btn-primary">AJAX
-            version</a>
-    </p>
+   <div class="row ">
+       <p>
+           <a href="ajax.html" class="btn btn-large btn-primary col-4">AJAX
+               version</a>
+       </p>
+       <form th:action="@{/logout}" method="post">
+           <input type="submit" value="Logout" class="col-4"/>
+       </form>
+   </div>
 
 </div>
 </body>
