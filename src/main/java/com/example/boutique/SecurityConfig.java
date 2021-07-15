@@ -24,6 +24,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 // Authentication mode:
                 .and().formLogin()  //  redirect to /login HTML page and then to the resource after successfull authentication
 
+                // Authentication mode:
+                .and().httpBasic()        // for web API auth
+
                 //disable csrf protection
                 .and().csrf().disable()
         ;
